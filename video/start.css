@@ -1,0 +1,86 @@
+@import '../reset.css';
+@import 'custom.css';
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bk2);
+    overflow: hidden;
+}
+div {
+    display: flex;
+    position: relative;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+div:nth-child(1) {
+    background-image: url('1.gif');
+    transition: 1s ease;
+    animation: 60s ease-in-out slideshow1 infinite,
+                16s ease-in-out rotation infinite, 
+                20s ease-in-out zoom infinite;
+}
+div:nth-child(2) {
+    background-image: url('2.gif');
+    animation: 60s ease-in-out slideshow2 infinite, 
+                16s ease-in-out rotationOff infinite, 
+                10s ease-in-out zoom infinite;
+}
+div:nth-child(3) {
+    background-image: url('3.gif');
+    animation: 60s ease-in-out slideshow3 infinite;
+}
+div:nth-child(4) {
+    background-image: url('4.gif');
+    animation: 60s ease-in-out slideshow4 infinite, 
+    16s ease-in-out rotation infinite, 
+    100s ease-in-out zoom infinite;
+}
+div:nth-child(5) {
+    background-image: url('5.gif');
+    animation: 60s ease-in-out slideshow5 infinite, 
+    16s ease-in-out rotationOff infinite, 
+    60s ease-in-out zoom infinite;
+}
+div:nth-child(6) {
+    background-image: url('6.gif');
+    animation: 60s ease-in-out slideshow6 infinite, 
+    16s ease-in-out rotation infinite;
+}
+div:nth-child(7) {
+    background-image: url('7.gif');
+    animation: 60s ease-in-out slideshow7 infinite;
+}
+div:nth-child(8) {
+    background-image: url('8.gif');
+    animation: 60s ease-in-out slideshow8 infinite, 
+    26s ease-in-out rotation infinite;
+}
+div:nth-child(9) {
+    background-image: url('9.gif');
+    animation: 60s ease-in-out slideshow9 infinite, 
+    36s ease-in-out rotation infinite, 
+    16s ease-in-out rotationOff infinite;
+}
+div:nth-child(10) {
+    background-image: url('10.gif');
+    animation: 60s ease-in-out slideshow10 infinite, 
+    40s ease-in-out rotationOff infinite, 
+    10s ease-in-out rotation infinite, 
+    10s ease-in-out zoom infinite;
+}
