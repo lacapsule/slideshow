@@ -1,0 +1,51 @@
+@import 'reset.css';
+@import 'custom.css';
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bk);
+    overflow: hidden;
+}
+div {
+    display: flex;
+    position: relative;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+div:nth-child(1) {
+    background-color: var(--img1);
+    animation: 60s ease-in-out slideshow1 infinite,
+                10s ease mutation infinite;
+}
+div:nth-child(2) {
+    background-color: var(--img2);
+    animation: 60s ease-in-out slideshow2 infinite,
+                10s ease mutation infinite;
+}
+div:nth-child(3) {
+    background-color: var(--img3);
+    animation: 60s ease-in-out slideshow3 infinite,
+                20s ease mutation infinite;
+}
+div:nth-child(4) {
+    background-color: var(--img4);
+    animation: 60s ease-in-out slideshow4 infinite,
+                20s ease mutation infinite;
+}
+div:nth-child(5) {
+    background-color: var(--img5);
+    animation: 60s ease-in-out slideshow5 infinite,
+                30s ease mutation infinite;
+}
